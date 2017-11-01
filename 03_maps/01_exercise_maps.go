@@ -12,11 +12,12 @@ func WordCount(s string) map[string]int {
 	m := make(map[string]int)
 
 	for _, w := range strings.Fields(s) {
-		if elem, ok := m[w]; ok == true {
-			m[w]++
-		} else {
-			m[w] = elem + 1
-		}
+		// if elem, ok := m[w]; ok == true {
+		// 	m[w]++
+		// } else {
+		// 	m[w] = elem + 1
+		// }
+		m[w]++
 	}
 
 	return m
