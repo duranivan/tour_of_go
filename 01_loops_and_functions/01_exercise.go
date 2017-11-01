@@ -22,7 +22,7 @@ func Sqrt(x float64) float64 {
 	z := x / 2
 	n := 0
 	for {
-		if math.Abs((z*z-x)/(2*z)) < 0.0000001 {
+		if math.Abs((z*z-x)/(2*z)) < 1e-7 {
 			break
 		}
 		z -= (z*z - x) / (2 * z)
