@@ -5,7 +5,7 @@ package main
 
 import "fmt"
 
-// Returns the xth fibonacci number
+// Returns the xth fibonacci number using recursion
 func fibo(x int) int {
 	if x == 1 {
 		return 0
