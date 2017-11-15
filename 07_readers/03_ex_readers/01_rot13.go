@@ -12,7 +12,7 @@ func rot13(x ...byte) []byte {
 	for _, e := range x {
 		match := bytes.Index(input, []byte{e})
 		if match == -1 {
-			result = append(result, e)	
+			result = append(result, e)
 		} else {
 			result = append(result, output[match])
 		}
